@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Marvel Heroes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 class="judul">The Avengers</h1>
+
+    <div class="container">
+        <div class="kotak">
+            <a href="#overlay1">
+                <div class="captain image">
+                    <div class="insidecapt">Captain America</div>
+                </div>
+            </a>
+            
+            <a href="#overlay3">
+                <div class="spiderman image">
+                    <div class="insidespider">Spider Man</div>
+                </div>
+            </a>
+            
+            <a href="#overlay2">
+                <div class="ironman image">
+                <div class="insideiron">Iron Man</div>
+            </div>
+            </a>
+
+            <a href="#overlay4">
+                <div class="hulk image">
+                    <div class="insidehulk">Hulk</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- LIGHTBOX -->
+
+        <div class="tampilan" id="overlay1">
+            <img src="img/full/captain.jpg" alt="" width="400px">
+            <a href="#" class="close">X</a>
+            <a href="#overlay2" class="next"></a>
+        </div>
+
+        <div class="tampilan" id="overlay2">
+            <img src="img/full/ironman.jpg" alt="" width="400px">
+            <a href="#" class="close">X</a>
+            <a href="#overlay3" class="next"></a>
+            <a href="#overlay1" class="back"></a>
+        </div>
+
+        <div class="tampilan" id="overlay3">
+            <img src="img/full/spider.jpg" alt="" width="400px">
+            <a href="#" class="close">X</a>
+            <a href="#overlay4" class="next"></a>
+            <a href="#overlay2" class="back"></a>
+        </div>
+
+        <div class="tampilan" id="overlay4">
+            <img src="img/full/hulk.jpg" alt="" width="400px">
+            <a href="#" class="close">X</a>
+            <a href="#overlay3" class="back"></a>
+        </div>
+
+        <!-- NEXT & BACK -->
+        
+
+    </div>
+</body>
+</html>
